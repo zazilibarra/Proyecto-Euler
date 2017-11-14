@@ -1,8 +1,10 @@
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Proyecto Euler.exe.config
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Proyecto Euler.exe
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Proyecto Euler.pdb
-C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form1.resources
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Properties.Resources.resources
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.csproj.GenerateResource.Cache
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.exe
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.pdb
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.csprojResolveAssemblyReference.cache
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Ayuda.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Menu.resources

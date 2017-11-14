@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Euler
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -20,6 +20,12 @@ namespace Proyecto_Euler
         private void btSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btAyuda_Click(object sender, EventArgs e)
+        {
+            Form fAyuda = new Ayuda();
+            fAyuda.Show();
         }
     }
 }
