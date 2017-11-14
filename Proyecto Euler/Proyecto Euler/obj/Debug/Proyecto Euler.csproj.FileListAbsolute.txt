@@ -1,1 +1,10 @@
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Proyecto Euler.exe.config
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Proyecto Euler.exe.config
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Proyecto Euler.exe
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Proyecto Euler.pdb
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.csprojResolveAssemblyReference.cache
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form1.resources
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Properties.Resources.resources
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.csproj.GenerateResource.Cache
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.exe
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.pdb
