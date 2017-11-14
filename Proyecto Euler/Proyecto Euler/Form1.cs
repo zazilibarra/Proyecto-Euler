@@ -16,5 +16,10 @@ namespace Proyecto_Euler
         {
             InitializeComponent();
         }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
