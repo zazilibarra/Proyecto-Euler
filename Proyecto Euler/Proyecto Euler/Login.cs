@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Web.Script.Serialization;
 
 namespace Proyecto_Euler
 {
@@ -28,6 +29,29 @@ namespace Proyecto_Euler
             usuario = tbUser.Text;
             password = tbUser.Text;
 
+            //RWArchivoTexto();
+            WJson();
+            RJson();
+        }
+
+        public void WJson()
+        {
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+            Jugador p1 = new Jugador { sNombre = "Javier", iIDReto = 18 };
+            string outputJSON = ser.Serialize(p1);
+            File.WriteAllText(@"Files\MiPrimerJSON.json", outputJSON);
+        }
+
+        public void RJson()
+        {
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+            string outputJSON = File.ReadAllText(@"Files\MiPrimerJSON.json");
+            Jugador p1 = ser.Deserialize<Jugador>(outputJSON);
+            MessageBox.Show(p1.ToString());
+        }
+
+        public void RWArchivoTexto()
+        {
             #region WRITE
             try
             {

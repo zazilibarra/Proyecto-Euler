@@ -9,9 +9,9 @@ namespace Proyecto_Euler
     class Jugador
     {
         private int iID;
-        private int iIDReto;
-        private string sNombre;
-        private string sContraseña;
+        public int iIDReto;
+        public string sNombre {get; set;}
+        private string sContraseña {get; set;}
 
         public Jugador()
         {
@@ -26,6 +26,11 @@ namespace Proyecto_Euler
         public void registrarAvance()
         {
 
+        }
+
+        public override string ToString()
+        {
+            return "Nombre: " + sNombre + "\nReto: " +iIDReto;
         }
     }
 }
