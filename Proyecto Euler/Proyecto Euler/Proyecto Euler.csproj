@@ -115,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\Ayuda.png" />
+    <Content Include="bin\Debug\Files\WriteLines.txt" />
     <Content Include="bin\Debug\Proyecto Euler.exe" />
     <Content Include="bin\Debug\Proyecto Euler.pdb" />
     <Content Include="bin\Debug\Proyecto Euler.vshost.exe" />

@@ -16,5 +16,10 @@ namespace Proyecto_Euler
         {
             InitializeComponent();
         }
+
+        private void Portada_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
