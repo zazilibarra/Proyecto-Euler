@@ -10,23 +10,15 @@ using System.Windows.Forms;
 
 namespace Proyecto_Euler
 {
-    public partial class Ayuda : Form
+    public partial class Records : Form
     {
-        public Ayuda()
+        public Records()
         {
             InitializeComponent();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
+        private void Records_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
-            Menu formMenu = new Menu();
-            formMenu.Visible = true;
-        }
-
-        private void Ayuda_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            this.Close();
             Menu formMenu = new Menu();
             formMenu.Visible = true;
         }

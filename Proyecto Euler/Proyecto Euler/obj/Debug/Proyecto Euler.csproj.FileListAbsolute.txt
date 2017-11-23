@@ -25,3 +25,5 @@ C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proye
 C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.pdb
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Login.resources
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Portada.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Records.resources

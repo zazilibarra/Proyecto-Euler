@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_Euler
 {
-    partial class Login
+    partial class Records
     {
         /// <summary>
         /// Required designer variable.
@@ -30,24 +30,20 @@
         {
             this.SuspendLayout();
             // 
-            // Login
+            // Records
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 653);
             this.MaximizeBox = false;
-            this.Name = "Login";
+            this.Name = "Records";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
+            this.Text = "Records";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Records_FormClosing);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btRegresar;
-        private System.Windows.Forms.Button btIniciarSesion;
-        private System.Windows.Forms.Label lbUser;
-        private System.Windows.Forms.Label lbPassword;
-        private System.Windows.Forms.TextBox tbUser;
-        private System.Windows.Forms.TextBox tbPassword;
     }
 }

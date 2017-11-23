@@ -24,8 +24,23 @@ namespace Proyecto_Euler
 
         private void btAyuda_Click(object sender, EventArgs e)
         {
-            Form fAyuda = new Ayuda();
-            fAyuda.Show();
+            this.Close();
+            Ayuda formAyuda = new Ayuda();
+            formAyuda.ShowDialog();
+        }
+
+        private void btIniciar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login formLogin = new Login();
+            formLogin.ShowDialog();
+        }
+
+        private void btRecords_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Records formRecords = new Records();
+            formRecords.ShowDialog();
         }
     }
 }

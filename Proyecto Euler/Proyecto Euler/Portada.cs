@@ -21,5 +21,12 @@ namespace Proyecto_Euler
         {
 
         }
+
+        private void Portada_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu formMenu = new Menu();
+            formMenu.ShowDialog();
+        }
     }
 }
