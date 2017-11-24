@@ -61,6 +61,12 @@
     <Compile Include="DatosUsuario.Designer.cs">
       <DependentUpon>DatosUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_RetoCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RetoCheck.Designer.cs">
+      <DependentUpon>Form_RetoCheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_RetoCompletar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DatosUsuario.resx">
       <DependentUpon>DatosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RetoCheck.resx">
+      <DependentUpon>Form_RetoCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_RetoCompletar.resx">
       <DependentUpon>Form_RetoCompletar.cs</DependentUpon>

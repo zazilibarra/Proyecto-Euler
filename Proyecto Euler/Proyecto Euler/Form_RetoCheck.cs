@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Proyecto_Euler
 {
-    public partial class Form_RetoCompletar : Form
+    public partial class Form_RetoCheck : Form
     {
-        public Form_RetoCompletar()
+        public Form_RetoCheck()
         {
             InitializeComponent();
-        }
-
-        private void Form_RetoCompletar_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

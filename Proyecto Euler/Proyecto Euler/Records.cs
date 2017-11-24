@@ -22,5 +22,12 @@ namespace Proyecto_Euler
             Menu formMenu = new Menu();
             formMenu.Visible = true;
         }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Menu formMenu = new Menu();
+            formMenu.Visible = true;
+        }
     }
 }
