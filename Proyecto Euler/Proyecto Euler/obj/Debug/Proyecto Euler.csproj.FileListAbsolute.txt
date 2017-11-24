@@ -29,3 +29,4 @@ C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Eule
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Records.resources
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form_RetoCompletar.resources
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form_RetoSeleccionar.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.DatosUsuario.resources

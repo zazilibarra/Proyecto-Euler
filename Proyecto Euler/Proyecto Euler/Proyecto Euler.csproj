@@ -108,6 +108,9 @@
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DatosUsuario.resx">
+      <DependentUpon>DatosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_RetoCompletar.resx">
       <DependentUpon>Form_RetoCompletar.cs</DependentUpon>
     </EmbeddedResource>

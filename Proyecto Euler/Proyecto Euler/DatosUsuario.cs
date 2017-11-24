@@ -12,9 +12,23 @@ namespace Proyecto_Euler
 {
     public partial class DatosUsuario : Form
     {
+        
+
         public DatosUsuario()
         {
             InitializeComponent();
+        }
+
+        public void ejecutar(string u, string p)
+        {
+            lblUsuario.Text = u;
+            lblContraseña.Text = p;
+        }
+
+        private void DatosUsuario_Load(object sender, EventArgs e)
+        {
+            Login FormLogin = new Login();
+            FormLogin.eMostrar += new Login.mostrar(ejecutar);
         }
     }
 }

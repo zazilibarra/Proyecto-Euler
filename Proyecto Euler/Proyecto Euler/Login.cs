@@ -14,6 +14,12 @@ namespace Proyecto_Euler
 {
     public partial class Login : Form
     {
+        //Delegado
+        public delegate void mostrar(string n, string p);
+
+        //Evento hará lo que corresponde al delegado
+        public event mostrar eMostrar;
+
         public Login()
         {
             InitializeComponent();
@@ -58,6 +64,15 @@ namespace Proyecto_Euler
         private void Login_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void btIniciarSesion_Click(object sender, EventArgs e)
+        {
+            //RWArchivoTexto();
+            //WJson();
+            //RJson();
+
+            eMostrar(tbUsuario.Text, tbContraseña.Text);
         }
 
         #region ARCHIVOS DE TEXTO

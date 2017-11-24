@@ -43,7 +43,7 @@
             this.btIniciarSesion.TabIndex = 0;
             this.btIniciarSesion.Text = "button1";
             this.btIniciarSesion.UseVisualStyleBackColor = true;
-            this.btIniciarSesion.Click += new System.EventHandler(this.btIniciarSesion_Click_1);
+            this.btIniciarSesion.Click += new System.EventHandler(this.btIniciarSesion_Click);
             // 
             // tbUsuario
             // 
