@@ -27,3 +27,5 @@ C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Eule
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Portada.resources
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Records.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form_RetoCompletar.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form_RetoSeleccionar.resources

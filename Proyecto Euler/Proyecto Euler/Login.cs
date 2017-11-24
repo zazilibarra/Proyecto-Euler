@@ -10,44 +10,26 @@ using System.Windows.Forms;
 using System.IO;
 using System.Web.Script.Serialization;
 
-
-
 namespace Proyecto_Euler
 {
     public partial class Login : Form
     {
-        string usuario;
-        string password;
-
         public Login()
         {
             InitializeComponent();
-            usuario = "";
-            password = "";
-        }
-
-        private void btIniciarSesion_Click(object sender, EventArgs e)
-        {
-            usuario = tbUser.Text;
-            password = tbPassword.Text;
-
-            //RWArchivoTexto();
-            WJson();
-            RJson();
         }
 
         #region JSON
         public void WJson()
         {
-            //Crear un objeto partir de la clase JavaScriptSerializer
-            //Utilizaremos esta referencia para acceder a las funciones de serialización y deserialización.
+            //Objeto partir de la clase JavaScriptSerializer para acceder  funciones de serialización y deserialización.
             JavaScriptSerializer ser = new JavaScriptSerializer();
-            //Crear un objeto p1 a partir de la clase jugardor e inicializar sus atributos.
-            Jugador p1 = new Jugador(usuario, password);
-            //Crear una variable string outputJSON, que almacenará la cadena deserializada en formato JSON. 
+            //Crear un objeto Jugador a partir de la clase jugardor e inicializar sus atributos.
+            Jugador p1 = new Jugador();
+            //outputJSON (string), almacenará la cadena deserializada en formato JSON. 
             string outputJSON = ser.Serialize(p1);
             //WriteAllText de la clase File para escribir nuestro outputJSON al archivo que indicamos. 
-            //En el primer parámetro pondremos el nombre del archivo, mientras que en el segundo pondremos la cadena a escribir.
+            //parámetro pondremos el nombre del archivo, segundo pondremos la cadena a escribir.
             //File.WriteAllText(@"Files\MiPrimerJSON.json", outputJSON);
 
             using (StreamWriter file = new StreamWriter(@"Files\MiPrimerJSON.json", true))
@@ -73,6 +55,12 @@ namespace Proyecto_Euler
             formMenu.Visible = true;
         }
 
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        #region ARCHIVOS DE TEXTO
         //public void RWArchivoTexto()
         //{
         //    #region WRITE
@@ -123,5 +111,6 @@ namespace Proyecto_Euler
         //    }
         //    #endregion
         //}
+        #endregion
     }
 }

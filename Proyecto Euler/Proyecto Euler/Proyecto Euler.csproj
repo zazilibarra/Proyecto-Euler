@@ -55,6 +55,24 @@
     <Compile Include="Ayuda.Designer.cs">
       <DependentUpon>Ayuda.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosUsuario.Designer.cs">
+      <DependentUpon>DatosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RetoCompletar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RetoCompletar.Designer.cs">
+      <DependentUpon>Form_RetoCompletar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_RetoSeleccionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_RetoSeleccionar.Designer.cs">
+      <DependentUpon>Form_RetoSeleccionar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +107,12 @@
     <Compile Include="RetoUnica.cs" />
     <EmbeddedResource Include="Ayuda.resx">
       <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RetoCompletar.resx">
+      <DependentUpon>Form_RetoCompletar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_RetoSeleccionar.resx">
+      <DependentUpon>Form_RetoSeleccionar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
