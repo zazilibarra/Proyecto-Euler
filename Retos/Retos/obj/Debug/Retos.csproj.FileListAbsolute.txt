@@ -1,0 +1,9 @@
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\bin\Debug\Retos.exe.config
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\bin\Debug\Retos.exe
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\bin\Debug\Retos.pdb
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.csprojResolveAssemblyReference.cache
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.Form1.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.Properties.Resources.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.csproj.GenerateResource.Cache
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.exe
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.pdb
