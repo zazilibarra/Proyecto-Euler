@@ -27,8 +27,8 @@ namespace Proyecto_Euler
 
         private void DatosUsuario_Load(object sender, EventArgs e)
         {
-            Login FormLogin = new Login();
-            FormLogin.eMostrar += new Login.mostrar(ejecutar);
+            //Login FormLogin = new Login();
+            //FormLogin.eMostrar += new Login.mostrar(ejecutar);
         }
     }
 }

@@ -19,10 +19,13 @@ namespace Proyecto_Euler
 
         //Evento hará lo que corresponde al delegado
         public event mostrar eMostrar;
+        DatosUsuario d;
 
         public Login()
         {
             InitializeComponent();
+            d = new DatosUsuario();
+            eMostrar = d.ejecutar;
         }
 
         #region JSON
@@ -73,6 +76,7 @@ namespace Proyecto_Euler
             //RJson();
 
             eMostrar(tbUsuario.Text, tbContraseña.Text);
+            d.ShowDialog();
         }
 
         #region ARCHIVOS DE TEXTO
