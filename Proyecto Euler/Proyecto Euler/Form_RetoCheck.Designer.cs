@@ -52,6 +52,7 @@
             this.cBVerdadero.TabIndex = 0;
             this.cBVerdadero.Text = "Verdadero";
             this.cBVerdadero.UseVisualStyleBackColor = false;
+            this.cBVerdadero.CheckedChanged += new System.EventHandler(this.cBVerdadero_CheckedChanged);
             // 
             // cBFalso
             // 
@@ -64,16 +65,16 @@
             this.cBFalso.TabIndex = 1;
             this.cBFalso.Text = "Falso";
             this.cBFalso.UseVisualStyleBackColor = false;
+            this.cBFalso.CheckedChanged += new System.EventHandler(this.cBFalso_CheckedChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(569, 507);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
             // label1
             // 
@@ -99,12 +100,14 @@
             // 
             // btSiguiente
             // 
+            this.btSiguiente.Enabled = false;
             this.btSiguiente.Location = new System.Drawing.Point(594, 384);
             this.btSiguiente.Name = "btSiguiente";
             this.btSiguiente.Size = new System.Drawing.Size(266, 58);
             this.btSiguiente.TabIndex = 5;
             this.btSiguiente.Text = "Siguiente";
             this.btSiguiente.UseVisualStyleBackColor = true;
+            this.btSiguiente.Click += new System.EventHandler(this.btSiguiente_Click);
             // 
             // btRegresar
             // 
