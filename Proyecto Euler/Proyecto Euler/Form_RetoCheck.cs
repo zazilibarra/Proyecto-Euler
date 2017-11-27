@@ -34,6 +34,12 @@ namespace Proyecto_Euler
         {
             r = rand.Next(0, 3);
             lienzo.DrawImage(reto.lRetosFacil[r], 0, 0);
+            
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,3 +7,6 @@ C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.csproj.GenerateResource.Cache
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.exe
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Retos\Retos\obj\Debug\Retos.pdb
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Retos\Retos\bin\Debug\Retos.exe.config
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Retos\Retos\obj\Debug\Retos.exe
+C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Retos\Retos\obj\Debug\Retos.pdb

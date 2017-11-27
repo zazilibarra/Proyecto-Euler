@@ -26,10 +26,10 @@ namespace Proyecto_Euler
 
         public void agregarRetos()
         {
-            lRetosFacil.Add(Image.FromFile("RF1.png"));
-            lRetosFacil.Add(Image.FromFile("RF2.png"));
-            lRetosFacil.Add(Image.FromFile("RF3.png"));
-            lRetosFacil.Add(Image.FromFile("RF4.png"));
+            lRetosFacil.Add(Image.FromFile("RFF1.png"));
+            lRetosFacil.Add(Image.FromFile("RFV1.png"));
+            lRetosFacil.Add(Image.FromFile("RFF2.png"));
+            lRetosFacil.Add(Image.FromFile("RFV2.png"));
 
         }
         
