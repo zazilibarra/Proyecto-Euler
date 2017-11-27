@@ -20,16 +20,14 @@ namespace Proyecto_Euler
         public Form_RetoCheck()
         {
             InitializeComponent();
-             reto = new Reto();
-            rand = new Random();
-           
+            reto = new Reto();
+            rand = new Random();           
         }
 
         private void Form_RetoCheck_Load(object sender, EventArgs e)
         {
             pb2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             this.Controls.Add(pb2);
-
         }
 
         private void progressBar1_Click(object sender, EventArgs e)
@@ -40,14 +38,14 @@ namespace Proyecto_Euler
         private void btSiguiente_Click(object sender, EventArgs e)
         {
             r = rand.Next(0, 3);
-            lienzo.DrawImage(reto.lRetosFacil[r], 0, 0);
+            lienzo.DrawImage(reto.lRetosFacil[r], 0, 0, 569, 507);
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             lienzo = pictureBox1.CreateGraphics();
             r = rand.Next(0, 3);
-            lienzo.DrawImage(reto.lRetosFacil[r], 0, 0);
+            lienzo.DrawImage(reto.lRetosFacil[r], 0, 0, 569, 507);
         }
 
         private void cBVerdadero_CheckedChanged(object sender, EventArgs e)
