@@ -14,13 +14,14 @@ namespace Proyecto_Euler
     {
         Graphics lienzo;
         PictureBox pb2 = new PictureBox();
-        Reto reto;
+        RetoUnica reto;
         Random rand;
         int r;
+        int res, ans, aux;
         public Form_RetoCheck()
         {
             InitializeComponent();
-            reto = new Reto();
+            reto = new RetoUnica();
             rand = new Random();           
         }
 
@@ -37,25 +38,43 @@ namespace Proyecto_Euler
 
         private void btSiguiente_Click(object sender, EventArgs e)
         {
-            r = rand.Next(0, 3);
-            lienzo.DrawImage(reto.lRetosFacil[r], 0, 0, 569, 507);
+            if(res == ans)
+            {
+                cBFalso.Enabled = true;
+                cBVerdadero.Enabled = true;
+                r = rand.Next(0, 3);
+                res = reto.lRespuesta[r];
+                lienzo.DrawImage(reto.lRetosFacil[r], 0, 0, 569, 507);
+            }
+            else
+            {
+               MessageBox.Show("Respuesta Incorrecta");
+               ans = 2;
+            }
+            
+            
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             lienzo = pictureBox1.CreateGraphics();
             r = rand.Next(0, 3);
+            res = reto.lRespuesta[r];
             lienzo.DrawImage(reto.lRetosFacil[r], 0, 0, 569, 507);
         }
 
         private void cBVerdadero_CheckedChanged(object sender, EventArgs e)
         {
+            ans = 1;
+            cBFalso.Enabled = false;
             btSiguiente.Enabled = true;
                       
         }
 
         private void cBFalso_CheckedChanged(object sender, EventArgs e)
         {
+            ans = 0;
+            cBVerdadero.Enabled = false;
             btSiguiente.Enabled = true;
            
         }
