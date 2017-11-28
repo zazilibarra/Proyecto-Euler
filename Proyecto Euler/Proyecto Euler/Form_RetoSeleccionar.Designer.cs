@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_RetoSeleccionar));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bt1 = new System.Windows.Forms.Button();
+            this.bt3 = new System.Windows.Forms.Button();
+            this.bt2 = new System.Windows.Forms.Button();
             this.btSiguiente = new System.Windows.Forms.Button();
             this.btRegresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,33 +48,35 @@
             this.pictureBox1.Size = new System.Drawing.Size(569, 507);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             // 
-            // button1
+            // bt1
             // 
-            this.button1.Location = new System.Drawing.Point(696, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bt1.Location = new System.Drawing.Point(696, 121);
+            this.bt1.Name = "bt1";
+            this.bt1.Size = new System.Drawing.Size(75, 23);
+            this.bt1.TabIndex = 1;
+            this.bt1.Text = "-";
+            this.bt1.UseVisualStyleBackColor = true;
+            this.bt1.Click += new System.EventHandler(this.bt1_Click);
             // 
-            // button2
+            // bt3
             // 
-            this.button2.Location = new System.Drawing.Point(696, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bt3.Location = new System.Drawing.Point(696, 179);
+            this.bt3.Name = "bt3";
+            this.bt3.Size = new System.Drawing.Size(75, 23);
+            this.bt3.TabIndex = 2;
+            this.bt3.Text = "-";
+            this.bt3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // bt2
             // 
-            this.button3.Location = new System.Drawing.Point(696, 150);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bt2.Location = new System.Drawing.Point(696, 150);
+            this.bt2.Name = "bt2";
+            this.bt2.Size = new System.Drawing.Size(75, 23);
+            this.bt2.TabIndex = 3;
+            this.bt2.Text = "-";
+            this.bt2.UseVisualStyleBackColor = true;
             // 
             // btSiguiente
             // 
@@ -84,6 +86,7 @@
             this.btSiguiente.TabIndex = 4;
             this.btSiguiente.Text = "Siguiente";
             this.btSiguiente.UseVisualStyleBackColor = true;
+            this.btSiguiente.Click += new System.EventHandler(this.btSiguiente_Click);
             // 
             // btRegresar
             // 
@@ -133,13 +136,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.btSiguiente);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt2);
+            this.Controls.Add(this.bt3);
+            this.Controls.Add(this.bt1);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_RetoSeleccionar";
             this.Text = "Form_RetoSeleccionar";
+            this.Load += new System.EventHandler(this.Form_RetoSeleccionar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -149,9 +153,9 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button bt1;
+        private System.Windows.Forms.Button bt3;
+        private System.Windows.Forms.Button bt2;
         private System.Windows.Forms.Button btSiguiente;
         private System.Windows.Forms.Button btRegresar;
         private System.Windows.Forms.Label label1;
