@@ -29,5 +29,10 @@ namespace Proyecto_Euler
             Menu formMenu = new Menu();
             formMenu.Visible = true;
         }
+
+        private void Records_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

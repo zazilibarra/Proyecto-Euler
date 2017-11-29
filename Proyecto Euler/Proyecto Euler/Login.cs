@@ -28,30 +28,34 @@ namespace Proyecto_Euler
             eMostrar = d.ejecutar;
         }
 
-        #region JSON
-        public void WJson()
+        private void btIniciarSesion_Click(object sender, EventArgs e)
         {
-            //Objeto partir de la clase JavaScriptSerializer para acceder  funciones de serialización y deserialización.
-            JavaScriptSerializer ser = new JavaScriptSerializer();
-            //Crear un objeto Jugador a partir de la clase jugardor e inicializar sus atributos.
-            Jugador p1 = new Jugador();
-            //outputJSON (string), almacenará la cadena deserializada en formato JSON. 
-            string outputJSON = ser.Serialize(p1);
-            //WriteAllText de la clase File para escribir nuestro outputJSON al archivo que indicamos. 
-            //parámetro pondremos el nombre del archivo, segundo pondremos la cadena a escribir.
-            //File.WriteAllText(@"Files\MiPrimerJSON.json", outputJSON);
+            //RWArchivoTexto();
 
-            using (StreamWriter file = new StreamWriter(@"Files\MiPrimerJSON.json", true))
-            {
-                file.WriteLine(outputJSON);
-            }
-
+            eMostrar(tbUsuario.Text, tbContraseña.Text);
+            d.ShowDialog();
         }
 
-        public void RJson()
+        #region JSON
+        public void WriteUsers()
         {
             JavaScriptSerializer ser = new JavaScriptSerializer();
-            string outputJSON = File.ReadAllText(@"Files\MiPrimerJSON.json");
+            Jugador p1 = new Jugador();
+            string outputJSON = ser.Serialize(p1);
+            File.WriteAllText(@"Files\Usuarios.json", outputJSON);
+        }
+
+        public void WriteUsers(Jugador jUser)
+        {
+            JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
+            string outputJSON = jsSerializer.Serialize(jUser);
+            File.WriteAllText(@"Files\Usuarios.json", outputJSON);
+        }
+
+        public void ReadUsers()
+        {
+            JavaScriptSerializer ser = new JavaScriptSerializer();
+            string outputJSON = File.ReadAllText(@"Files\Usuarios.json");
             Jugador [] p1 = ser.Deserialize<Jugador[]>(outputJSON);
             MessageBox.Show(p1.ToString());
         }
@@ -67,16 +71,6 @@ namespace Proyecto_Euler
         private void Login_Load(object sender, EventArgs e)
         {
             
-        }
-
-        private void btIniciarSesion_Click(object sender, EventArgs e)
-        {
-            //RWArchivoTexto();
-            //WJson();
-            //RJson();
-
-            eMostrar(tbUsuario.Text, tbContraseña.Text);
-            d.ShowDialog();
         }
 
         #region ARCHIVOS DE TEXTO

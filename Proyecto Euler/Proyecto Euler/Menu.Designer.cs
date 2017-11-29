@@ -38,7 +38,7 @@
             // 
             // btIniciar
             // 
-            this.btIniciar.Location = new System.Drawing.Point(31, 84);
+            this.btIniciar.Location = new System.Drawing.Point(475, 185);
             this.btIniciar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btIniciar.Name = "btIniciar";
             this.btIniciar.Size = new System.Drawing.Size(232, 49);
@@ -49,7 +49,7 @@
             // 
             // btContinuar
             // 
-            this.btContinuar.Location = new System.Drawing.Point(31, 155);
+            this.btContinuar.Location = new System.Drawing.Point(475, 256);
             this.btContinuar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btContinuar.Name = "btContinuar";
             this.btContinuar.Size = new System.Drawing.Size(232, 49);
@@ -60,7 +60,7 @@
             // 
             // btAyuda
             // 
-            this.btAyuda.Location = new System.Drawing.Point(31, 226);
+            this.btAyuda.Location = new System.Drawing.Point(475, 327);
             this.btAyuda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btAyuda.Name = "btAyuda";
             this.btAyuda.Size = new System.Drawing.Size(232, 49);
@@ -71,7 +71,7 @@
             // 
             // btRecords
             // 
-            this.btRecords.Location = new System.Drawing.Point(31, 303);
+            this.btRecords.Location = new System.Drawing.Point(475, 404);
             this.btRecords.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btRecords.Name = "btRecords";
             this.btRecords.Size = new System.Drawing.Size(232, 49);
@@ -82,13 +82,15 @@
             // 
             // btSalir
             // 
-            this.btSalir.Location = new System.Drawing.Point(288, 411);
-            this.btSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSalir.BackColor = System.Drawing.Color.Transparent;
+            this.btSalir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btSalir.BackgroundImage")));
+            this.btSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btSalir.Location = new System.Drawing.Point(1132, 607);
+            this.btSalir.Margin = new System.Windows.Forms.Padding(0);
             this.btSalir.Name = "btSalir";
-            this.btSalir.Size = new System.Drawing.Size(109, 34);
+            this.btSalir.Size = new System.Drawing.Size(36, 34);
             this.btSalir.TabIndex = 4;
-            this.btSalir.Text = "Salir";
-            this.btSalir.UseVisualStyleBackColor = true;
+            this.btSalir.UseVisualStyleBackColor = false;
             this.btSalir.Click += new System.EventHandler(this.btSalir_Click);
             // 
             // Menu

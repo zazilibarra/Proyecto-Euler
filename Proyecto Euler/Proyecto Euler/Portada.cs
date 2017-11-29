@@ -28,5 +28,10 @@ namespace Proyecto_Euler
             Menu formMenu = new Menu();
             formMenu.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

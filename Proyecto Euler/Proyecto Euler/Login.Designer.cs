@@ -49,7 +49,7 @@
             // 
             // tbUsuario
             // 
-            this.tbUsuario.Location = new System.Drawing.Point(509, 270);
+            this.tbUsuario.Location = new System.Drawing.Point(445, 277);
             this.tbUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(311, 22);
@@ -57,16 +57,18 @@
             // 
             // tbContraseña
             // 
-            this.tbContraseña.Location = new System.Drawing.Point(509, 327);
+            this.tbContraseña.Location = new System.Drawing.Point(445, 334);
             this.tbContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbContraseña.Name = "tbContraseña";
+            this.tbContraseña.PasswordChar = '■';
             this.tbContraseña.Size = new System.Drawing.Size(311, 22);
             this.tbContraseña.TabIndex = 3;
             // 
             // Usuario
             // 
             this.Usuario.AutoSize = true;
-            this.Usuario.Location = new System.Drawing.Point(405, 278);
+            this.Usuario.BackColor = System.Drawing.Color.Transparent;
+            this.Usuario.Location = new System.Drawing.Point(445, 258);
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(57, 17);
             this.Usuario.TabIndex = 4;
@@ -75,7 +77,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(381, 336);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(445, 315);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 5;

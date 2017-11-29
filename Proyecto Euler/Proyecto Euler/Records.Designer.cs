@@ -58,6 +58,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Euler";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Records_FormClosing);
+            this.Load += new System.EventHandler(this.Records_Load);
             this.ResumeLayout(false);
 
         }
