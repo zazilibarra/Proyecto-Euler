@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatosUsuario));
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -57,9 +58,11 @@
             this.ClientSize = new System.Drawing.Size(1182, 653);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DatosUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DatosUsuario";
+            this.Text = "Proyecto Euler";
             this.Load += new System.EventHandler(this.DatosUsuario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

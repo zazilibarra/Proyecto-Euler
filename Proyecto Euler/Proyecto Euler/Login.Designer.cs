@@ -38,10 +38,10 @@
             // 
             // btIniciarSesion
             // 
-            this.btIniciarSesion.Location = new System.Drawing.Point(402, 474);
-            this.btIniciarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btIniciarSesion.Location = new System.Drawing.Point(536, 583);
+            this.btIniciarSesion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btIniciarSesion.Name = "btIniciarSesion";
-            this.btIniciarSesion.Size = new System.Drawing.Size(134, 46);
+            this.btIniciarSesion.Size = new System.Drawing.Size(179, 57);
             this.btIniciarSesion.TabIndex = 0;
             this.btIniciarSesion.Text = "Iniciar Sesion ";
             this.btIniciarSesion.UseVisualStyleBackColor = true;
@@ -49,57 +49,55 @@
             // 
             // tbUsuario
             // 
-            this.tbUsuario.Location = new System.Drawing.Point(382, 219);
-            this.tbUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUsuario.Location = new System.Drawing.Point(509, 270);
+            this.tbUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.Size = new System.Drawing.Size(234, 20);
+            this.tbUsuario.Size = new System.Drawing.Size(311, 22);
             this.tbUsuario.TabIndex = 2;
             // 
             // tbContraseña
             // 
-            this.tbContraseña.Location = new System.Drawing.Point(382, 266);
-            this.tbContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbContraseña.Location = new System.Drawing.Point(509, 327);
+            this.tbContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbContraseña.Name = "tbContraseña";
-            this.tbContraseña.Size = new System.Drawing.Size(234, 20);
+            this.tbContraseña.Size = new System.Drawing.Size(311, 22);
             this.tbContraseña.TabIndex = 3;
             // 
             // Usuario
             // 
             this.Usuario.AutoSize = true;
-            this.Usuario.Location = new System.Drawing.Point(304, 226);
-            this.Usuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Usuario.Location = new System.Drawing.Point(405, 278);
             this.Usuario.Name = "Usuario";
-            this.Usuario.Size = new System.Drawing.Size(43, 13);
+            this.Usuario.Size = new System.Drawing.Size(57, 17);
             this.Usuario.TabIndex = 4;
             this.Usuario.Text = "Usuario";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 273);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(381, 336);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Contraseña";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(886, 531);
+            this.ClientSize = new System.Drawing.Size(1181, 654);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Usuario);
             this.Controls.Add(this.tbContraseña);
             this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.btIniciarSesion);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login";
+            this.Text = "Proyecto Euler";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

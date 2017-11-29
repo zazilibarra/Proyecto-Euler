@@ -46,9 +46,10 @@
             this.cBVerdadero.AutoSize = true;
             this.cBVerdadero.BackColor = System.Drawing.Color.Transparent;
             this.cBVerdadero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBVerdadero.Location = new System.Drawing.Point(655, 128);
+            this.cBVerdadero.Location = new System.Drawing.Point(873, 158);
+            this.cBVerdadero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBVerdadero.Name = "cBVerdadero";
-            this.cBVerdadero.Size = new System.Drawing.Size(119, 28);
+            this.cBVerdadero.Size = new System.Drawing.Size(149, 33);
             this.cBVerdadero.TabIndex = 0;
             this.cBVerdadero.Text = "Verdadero";
             this.cBVerdadero.UseVisualStyleBackColor = false;
@@ -59,9 +60,10 @@
             this.cBFalso.AutoSize = true;
             this.cBFalso.BackColor = System.Drawing.Color.Transparent;
             this.cBFalso.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBFalso.Location = new System.Drawing.Point(655, 182);
+            this.cBFalso.Location = new System.Drawing.Point(873, 224);
+            this.cBFalso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cBFalso.Name = "cBFalso";
-            this.cBFalso.Size = new System.Drawing.Size(75, 28);
+            this.cBFalso.Size = new System.Drawing.Size(95, 33);
             this.cBFalso.TabIndex = 1;
             this.cBFalso.Text = "Falso";
             this.cBFalso.UseVisualStyleBackColor = false;
@@ -70,9 +72,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(569, 507);
+            this.pictureBox1.Size = new System.Drawing.Size(759, 624);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
@@ -82,9 +85,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(590, 54);
+            this.label1.Location = new System.Drawing.Point(787, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 18);
+            this.label1.Size = new System.Drawing.Size(376, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "De acuerdo a lo que menciona el problema";
             // 
@@ -93,18 +97,20 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(590, 74);
+            this.label2.Location = new System.Drawing.Point(787, 91);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(236, 18);
+            this.label2.Size = new System.Drawing.Size(299, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "determina si el codigo es correcto ";
             // 
             // btSiguiente
             // 
             this.btSiguiente.Enabled = false;
-            this.btSiguiente.Location = new System.Drawing.Point(594, 384);
+            this.btSiguiente.Location = new System.Drawing.Point(792, 473);
+            this.btSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSiguiente.Name = "btSiguiente";
-            this.btSiguiente.Size = new System.Drawing.Size(266, 58);
+            this.btSiguiente.Size = new System.Drawing.Size(355, 71);
             this.btSiguiente.TabIndex = 5;
             this.btSiguiente.Text = "Siguiente";
             this.btSiguiente.UseVisualStyleBackColor = true;
@@ -112,18 +118,20 @@
             // 
             // btRegresar
             // 
-            this.btRegresar.Location = new System.Drawing.Point(594, 461);
+            this.btRegresar.Location = new System.Drawing.Point(792, 567);
+            this.btRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(266, 58);
+            this.btRegresar.Size = new System.Drawing.Size(355, 71);
             this.btRegresar.TabIndex = 6;
             this.btRegresar.Text = "Regresar a Menu";
             this.btRegresar.UseVisualStyleBackColor = true;
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(594, 28);
+            this.progressBar1.Location = new System.Drawing.Point(792, 34);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(287, 23);
+            this.progressBar1.Size = new System.Drawing.Size(383, 28);
             this.progressBar1.TabIndex = 7;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
@@ -131,19 +139,20 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(591, 12);
+            this.label3.Location = new System.Drawing.Point(788, 15);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(44, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Timer";
             // 
             // Form_RetoCheck
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(886, 531);
+            this.ClientSize = new System.Drawing.Size(1181, 654);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btRegresar);
@@ -153,8 +162,12 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cBFalso);
             this.Controls.Add(this.cBVerdadero);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "Form_RetoCheck";
-            this.Text = "Form_RetoCheck";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Proyecto Euler";
             this.Load += new System.EventHandler(this.Form_RetoCheck_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -34,9 +34,10 @@
             // 
             // btRegresar
             // 
-            this.btRegresar.Location = new System.Drawing.Point(26, 457);
+            this.btRegresar.Location = new System.Drawing.Point(35, 562);
+            this.btRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(179, 62);
+            this.btRegresar.Size = new System.Drawing.Size(239, 76);
             this.btRegresar.TabIndex = 0;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
@@ -44,17 +45,18 @@
             // 
             // Records
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(886, 531);
+            this.ClientSize = new System.Drawing.Size(1181, 654);
             this.Controls.Add(this.btRegresar);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Records";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Records";
+            this.Text = "Proyecto Euler";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Records_FormClosing);
             this.ResumeLayout(false);
 
