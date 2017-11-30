@@ -24,6 +24,7 @@ namespace Proyecto_Euler
         public Login()
         {
             InitializeComponent();
+
             d = new DatosUsuario();
             eMostrar = d.ejecutar;
         }
@@ -45,12 +46,12 @@ namespace Proyecto_Euler
             File.WriteAllText(@"Files\Usuarios.json", outputJSON);
         }
 
-        public void WriteUsers(Jugador jUser)
-        {
-            JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
-            string outputJSON = jsSerializer.Serialize(jUser);
-            File.WriteAllText(@"Files\Usuarios.json", outputJSON);
-        }
+        //public void WriteUsers(Jugador jUser)
+        //{
+        //    JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
+        //    string outputJSON = jsSerializer.Serialize(jUser);
+        //    File.WriteAllText(@"Files\Usuarios.json", outputJSON);
+        //}
 
         public void ReadUsers()
         {
@@ -70,7 +71,50 @@ namespace Proyecto_Euler
 
         private void Login_Load(object sender, EventArgs e)
         {
-            
+            CreateFileOrFolder();            
+        }
+
+        public void CreateFileOrFolder()
+        {
+            string folderName = @"Files";
+            string pathString = System.IO.Path.Combine(folderName, "SubFolder");
+
+            System.IO.Directory.CreateDirectory(pathString);
+
+            string fileName = "Usuarios.json";
+
+            pathString = System.IO.Path.Combine(pathString, fileName);
+            MessageBox.Show("Ruta: " + pathString);
+
+            if (!System.IO.File.Exists(pathString))
+            {
+                using (System.IO.FileStream fs = System.IO.File.Create(pathString))
+                {
+                    for (byte i = 0; i < 10; i++)
+                    {
+                        fs.WriteByte(i);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("File" + fileName+ " already exists.");
+                return;
+            }
+
+            // Read and display the data from your file.
+            try
+            {
+                byte[] readBuffer = System.IO.File.ReadAllBytes(pathString);
+                foreach (byte b in readBuffer)
+                {
+                    MessageBox.Show(b + " ");
+                }
+            }
+            catch (System.IO.IOException e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         #region ARCHIVOS DE TEXTO
