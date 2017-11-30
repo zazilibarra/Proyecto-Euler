@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Proyecto_Euler
@@ -18,11 +18,18 @@ namespace Proyecto_Euler
         Random rand;
         int r;
         int res, ans, aux;
+
+        //Thread tHiloBarra;
+
+        //delegate void delegado(int iValor);
+
         public Form_RetoCheck()
         {
             InitializeComponent();
             reto = new RetoUnica();
-            rand = new Random();           
+            rand = new Random();
+
+            //tHiloBarra = new Thread(new ThreadStart(barraTiempo));
         }
 
         private void Form_RetoCheck_Load(object sender, EventArgs e)
@@ -36,9 +43,14 @@ namespace Proyecto_Euler
 
         }
 
+        public void ejecutar(string u, string p)
+        {
+            lblUsuario.Text = u;
+        }
+
         private void btSiguiente_Click(object sender, EventArgs e)
         {
-            if(res == ans)
+            if (res == ans)
             {
                 cBFalso.Enabled = true;
                 cBVerdadero.Enabled = true;
@@ -48,11 +60,18 @@ namespace Proyecto_Euler
             }
             else
             {
-               MessageBox.Show("Respuesta Incorrecta");
-               ans = 2;
+                MessageBox.Show("Respuesta Incorrecta");
+                ans = 2;
             }
-            
-            
+            clear();
+        }
+
+        public void clear()
+        {
+            cBFalso.Enabled = true;
+            cBVerdadero.Enabled = true;
+            cBFalso.Checked = false;
+            cBVerdadero.Checked = false;
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
@@ -66,17 +85,15 @@ namespace Proyecto_Euler
         private void cBVerdadero_CheckedChanged(object sender, EventArgs e)
         {
             ans = 1;
-            cBFalso.Enabled = false;
             btSiguiente.Enabled = true;
-                      
+            cBFalso.Checked = false;
         }
 
         private void cBFalso_CheckedChanged(object sender, EventArgs e)
         {
             ans = 0;
-            cBVerdadero.Enabled = false;
             btSiguiente.Enabled = true;
-           
+            cBVerdadero.Checked = false;
         }
     }
 }

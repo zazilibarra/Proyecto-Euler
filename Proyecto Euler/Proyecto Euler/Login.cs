@@ -19,13 +19,14 @@ namespace Proyecto_Euler
 
         //Evento hará lo que corresponde al delegado
         public event mostrar eMostrar;
-        DatosUsuario d;
+        Form_RetoCheck d;
 
         public Login()
         {
             InitializeComponent();
 
-            d = new DatosUsuario();
+            //d = new DatosUsuario();
+            d = new Form_RetoCheck();
             eMostrar = d.ejecutar;
         }
 

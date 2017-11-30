@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
+
 
 namespace Proyecto_Euler
 {
     class Reto
     {
+        Thread tHiloBarra;
+
+        delegate void delegado(int iValor);
+
         private int iID;
         public  List<Image> lRetosFacil;
         private List<Image> lRetosIntermedio;
@@ -22,6 +27,7 @@ namespace Proyecto_Euler
             lRetosDificil = new List<Image>();
             agregarRetos();
 
+            //tHiloBarra = new Thread(new ThreadStart(barraTiempo));
         }
 
         public void agregarRetos()
