@@ -24,11 +24,9 @@ namespace Proyecto_Euler
             formMenu.Visible = true;
         }
 
-        private void Ayuda_FormClosed(object sender, FormClosedEventArgs e)
+        private void Ayuda_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
-            Menu formMenu = new Menu();
-            formMenu.Visible = true;
+            Application.Exit();
         }
     }
 }

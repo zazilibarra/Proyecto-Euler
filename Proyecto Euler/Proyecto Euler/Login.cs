@@ -118,6 +118,11 @@ namespace Proyecto_Euler
             }
         }
 
+        private void Login_FormClosing_1(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
         #region ARCHIVOS DE TEXTO
         //public void RWArchivoTexto()
         //{

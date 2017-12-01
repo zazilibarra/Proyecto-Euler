@@ -77,7 +77,7 @@
             // btnRegresar
             // 
             this.btnRegresar.Location = new System.Drawing.Point(16, 565);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(317, 74);
             this.btnRegresar.TabIndex = 5;
@@ -103,7 +103,7 @@
             this.Name = "Ayuda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Euler";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ayuda_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ayuda_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

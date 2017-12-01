@@ -43,9 +43,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(569, 507);
+            this.pictureBox1.Size = new System.Drawing.Size(759, 624);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
@@ -53,9 +54,10 @@
             // bt1
             // 
             this.bt1.BackColor = System.Drawing.Color.White;
-            this.bt1.Location = new System.Drawing.Point(696, 121);
+            this.bt1.Location = new System.Drawing.Point(928, 149);
+            this.bt1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bt1.Name = "bt1";
-            this.bt1.Size = new System.Drawing.Size(75, 23);
+            this.bt1.Size = new System.Drawing.Size(100, 28);
             this.bt1.TabIndex = 1;
             this.bt1.Text = "-";
             this.bt1.UseVisualStyleBackColor = false;
@@ -64,9 +66,10 @@
             // bt3
             // 
             this.bt3.BackColor = System.Drawing.Color.White;
-            this.bt3.Location = new System.Drawing.Point(696, 179);
+            this.bt3.Location = new System.Drawing.Point(928, 220);
+            this.bt3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bt3.Name = "bt3";
-            this.bt3.Size = new System.Drawing.Size(75, 23);
+            this.bt3.Size = new System.Drawing.Size(100, 28);
             this.bt3.TabIndex = 2;
             this.bt3.Text = "-";
             this.bt3.UseVisualStyleBackColor = false;
@@ -75,9 +78,10 @@
             // bt2
             // 
             this.bt2.BackColor = System.Drawing.Color.White;
-            this.bt2.Location = new System.Drawing.Point(696, 150);
+            this.bt2.Location = new System.Drawing.Point(928, 185);
+            this.bt2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bt2.Name = "bt2";
-            this.bt2.Size = new System.Drawing.Size(75, 23);
+            this.bt2.Size = new System.Drawing.Size(100, 28);
             this.bt2.TabIndex = 3;
             this.bt2.Text = "-";
             this.bt2.UseVisualStyleBackColor = false;
@@ -85,9 +89,10 @@
             // 
             // btSiguiente
             // 
-            this.btSiguiente.Location = new System.Drawing.Point(587, 361);
+            this.btSiguiente.Location = new System.Drawing.Point(783, 444);
+            this.btSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSiguiente.Name = "btSiguiente";
-            this.btSiguiente.Size = new System.Drawing.Size(287, 72);
+            this.btSiguiente.Size = new System.Drawing.Size(383, 89);
             this.btSiguiente.TabIndex = 4;
             this.btSiguiente.Text = "Siguiente";
             this.btSiguiente.UseVisualStyleBackColor = true;
@@ -95,9 +100,10 @@
             // 
             // btRegresar
             // 
-            this.btRegresar.Location = new System.Drawing.Point(587, 450);
+            this.btRegresar.Location = new System.Drawing.Point(783, 554);
+            this.btRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btRegresar.Name = "btRegresar";
-            this.btRegresar.Size = new System.Drawing.Size(287, 69);
+            this.btRegresar.Size = new System.Drawing.Size(383, 85);
             this.btRegresar.TabIndex = 5;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
@@ -106,36 +112,39 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(587, 81);
+            this.label1.Location = new System.Drawing.Point(783, 100);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 13);
+            this.label1.Size = new System.Drawing.Size(177, 17);
             this.label1.TabIndex = 6;
             this.label1.Text = "Elige la respuesta correcta";
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(590, 45);
+            this.progressBar1.Location = new System.Drawing.Point(787, 55);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(290, 23);
+            this.progressBar1.Size = new System.Drawing.Size(387, 28);
             this.progressBar1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(587, 12);
+            this.label2.Location = new System.Drawing.Point(783, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(44, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "Timer";
             // 
             // Form_RetoSeleccionar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(886, 531);
+            this.ClientSize = new System.Drawing.Size(1181, 654);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
@@ -146,11 +155,12 @@
             this.Controls.Add(this.bt1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Form_RetoSeleccionar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Euler";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_RetoSeleccionar_FormClosing);
             this.Load += new System.EventHandler(this.Form_RetoSeleccionar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

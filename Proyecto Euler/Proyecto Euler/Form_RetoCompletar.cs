@@ -126,5 +126,10 @@ namespace Proyecto_Euler
         {
             textBox3.Enabled = true;
         }
+
+        private void Form_RetoCompletar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

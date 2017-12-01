@@ -42,5 +42,10 @@ namespace Proyecto_Euler
             Records formRecords = new Records();
             formRecords.ShowDialog();
         }
+
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

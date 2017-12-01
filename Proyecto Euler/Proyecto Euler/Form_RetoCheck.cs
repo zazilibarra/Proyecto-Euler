@@ -100,5 +100,10 @@ namespace Proyecto_Euler
             btSiguiente.Enabled = true;
             cBVerdadero.Checked = false;
         }
+
+        private void Form_RetoCheck_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

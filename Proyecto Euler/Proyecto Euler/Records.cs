@@ -19,8 +19,7 @@ namespace Proyecto_Euler
 
         private void Records_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Menu formMenu = new Menu();
-            formMenu.Visible = true;
+            Application.Exit();
         }
 
         private void btRegresar_Click(object sender, EventArgs e)

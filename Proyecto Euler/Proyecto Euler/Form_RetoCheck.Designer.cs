@@ -181,6 +181,7 @@
             this.Name = "Form_RetoCheck";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Euler";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_RetoCheck_FormClosing);
             this.Load += new System.EventHandler(this.Form_RetoCheck_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

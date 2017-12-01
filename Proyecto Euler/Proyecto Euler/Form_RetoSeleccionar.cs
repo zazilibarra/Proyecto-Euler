@@ -151,6 +151,11 @@ namespace Proyecto_Euler
             }
 
         }
+
+        private void Form_RetoSeleccionar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
                    
     }
 }

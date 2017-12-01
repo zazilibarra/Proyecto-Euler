@@ -17,11 +17,6 @@ namespace Proyecto_Euler
             InitializeComponent();
         }
 
-        private void Portada_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Portada_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -29,9 +24,15 @@ namespace Proyecto_Euler
             formMenu.ShowDialog();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Portada_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Portada_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }
