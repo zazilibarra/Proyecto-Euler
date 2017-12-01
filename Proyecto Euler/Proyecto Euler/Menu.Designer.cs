@@ -56,7 +56,7 @@
             this.btContinuar.TabIndex = 1;
             this.btContinuar.Text = "Continuar";
             this.btContinuar.UseVisualStyleBackColor = true;
-            this.btContinuar.Visible = false;
+            this.btContinuar.Click += new System.EventHandler(this.btContinuar_Click);
             // 
             // btAyuda
             // 

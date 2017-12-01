@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace Proyecto_Euler
@@ -21,6 +21,9 @@ namespace Proyecto_Euler
         Point p3 = new Point(732,95);
         int sigR,r; 
         int auxRes;
+
+        Thread tHilo;
+        delegate void delegado(int iValor);
 
         public Form_RetoCompletar()
         {
@@ -58,6 +61,11 @@ namespace Proyecto_Euler
         {
             pb2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             this.Controls.Add(pb2);
+        }
+
+        public void ejecutar(string j)
+        {
+            lblUsuario.Text = j;
         }
 
         //Evento para cargar el primer Reto en el picturebox
@@ -130,6 +138,27 @@ namespace Proyecto_Euler
         private void Form_RetoCompletar_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form_RetoCompletar_Activated(object sender, EventArgs e)
+        {
+            tHilo = new Thread(new ThreadStart(Progreso));
+            tHilo.Start();
+        }
+
+        public void Progreso()
+        {
+            for (int i = 0; i < 101; i++)
+            {
+                delegado MD = new delegado(Actualizar1);
+                this.Invoke(MD, new object[] { i });
+                Thread.Sleep(70);
+            }
+        }
+
+        public void Actualizar1(int v)
+        {
+            pbTimeDificil.Value = v;
         }
     }
 }

@@ -38,13 +38,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(759, 624);
             this.pictureBox1.TabIndex = 0;
@@ -55,7 +57,7 @@
             // 
             this.bt1.BackColor = System.Drawing.Color.White;
             this.bt1.Location = new System.Drawing.Point(928, 149);
-            this.bt1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bt1.Margin = new System.Windows.Forms.Padding(4);
             this.bt1.Name = "bt1";
             this.bt1.Size = new System.Drawing.Size(100, 28);
             this.bt1.TabIndex = 1;
@@ -67,7 +69,7 @@
             // 
             this.bt3.BackColor = System.Drawing.Color.White;
             this.bt3.Location = new System.Drawing.Point(928, 220);
-            this.bt3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bt3.Margin = new System.Windows.Forms.Padding(4);
             this.bt3.Name = "bt3";
             this.bt3.Size = new System.Drawing.Size(100, 28);
             this.bt3.TabIndex = 2;
@@ -79,7 +81,7 @@
             // 
             this.bt2.BackColor = System.Drawing.Color.White;
             this.bt2.Location = new System.Drawing.Point(928, 185);
-            this.bt2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bt2.Margin = new System.Windows.Forms.Padding(4);
             this.bt2.Name = "bt2";
             this.bt2.Size = new System.Drawing.Size(100, 28);
             this.bt2.TabIndex = 3;
@@ -90,7 +92,7 @@
             // btSiguiente
             // 
             this.btSiguiente.Location = new System.Drawing.Point(783, 444);
-            this.btSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSiguiente.Margin = new System.Windows.Forms.Padding(4);
             this.btSiguiente.Name = "btSiguiente";
             this.btSiguiente.Size = new System.Drawing.Size(383, 89);
             this.btSiguiente.TabIndex = 4;
@@ -101,7 +103,7 @@
             // btRegresar
             // 
             this.btRegresar.Location = new System.Drawing.Point(783, 554);
-            this.btRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btRegresar.Name = "btRegresar";
             this.btRegresar.Size = new System.Drawing.Size(383, 85);
             this.btRegresar.TabIndex = 5;
@@ -122,10 +124,11 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(787, 55);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(387, 28);
             this.progressBar1.TabIndex = 7;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // label2
             // 
@@ -138,6 +141,16 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Timer";
             // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(1060, 15);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(0, 25);
+            this.lblUsuario.TabIndex = 14;
+            // 
             // Form_RetoSeleccionar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -145,6 +158,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1181, 654);
+            this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
@@ -160,6 +174,7 @@
             this.Name = "Form_RetoSeleccionar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Euler";
+            this.Activated += new System.EventHandler(this.Form_RetoSeleccionar_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_RetoSeleccionar_FormClosing);
             this.Load += new System.EventHandler(this.Form_RetoSeleccionar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -179,5 +194,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }

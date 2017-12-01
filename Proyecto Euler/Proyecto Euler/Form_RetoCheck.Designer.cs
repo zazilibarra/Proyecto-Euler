@@ -36,7 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btSiguiente = new System.Windows.Forms.Button();
             this.btRegresar = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pBTimeFacil = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -127,14 +127,14 @@
             this.btRegresar.Text = "Regresar a Menu";
             this.btRegresar.UseVisualStyleBackColor = true;
             // 
-            // progressBar1
+            // pBTimeFacil
             // 
-            this.progressBar1.Location = new System.Drawing.Point(792, 54);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(383, 28);
-            this.progressBar1.TabIndex = 7;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            this.pBTimeFacil.Location = new System.Drawing.Point(792, 54);
+            this.pBTimeFacil.Margin = new System.Windows.Forms.Padding(4);
+            this.pBTimeFacil.Name = "pBTimeFacil";
+            this.pBTimeFacil.Size = new System.Drawing.Size(383, 28);
+            this.pBTimeFacil.TabIndex = 7;
+            this.pBTimeFacil.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // label3
             // 
@@ -152,11 +152,10 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(1083, 9);
+            this.lblUsuario.Location = new System.Drawing.Point(1061, 15);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(64, 25);
+            this.lblUsuario.Size = new System.Drawing.Size(0, 25);
             this.lblUsuario.TabIndex = 9;
-            this.lblUsuario.Text = "label4";
             // 
             // Form_RetoCheck
             // 
@@ -167,7 +166,7 @@
             this.ClientSize = new System.Drawing.Size(1181, 654);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pBTimeFacil);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.btSiguiente);
             this.Controls.Add(this.label2);
@@ -181,6 +180,7 @@
             this.Name = "Form_RetoCheck";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto Euler";
+            this.Activated += new System.EventHandler(this.Form_RetoCheck_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_RetoCheck_FormClosing);
             this.Load += new System.EventHandler(this.Form_RetoCheck_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -198,7 +198,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btSiguiente;
         private System.Windows.Forms.Button btRegresar;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar pBTimeFacil;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblUsuario;
     }

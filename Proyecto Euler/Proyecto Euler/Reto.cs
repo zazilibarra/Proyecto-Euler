@@ -10,15 +10,10 @@ namespace Proyecto_Euler
 {
     class Reto
     {
-        Thread tHiloBarra;
-
-        delegate void delegado(int iValor);
-
         private int iID;
         public  List<Image> lRetosFacil;
-        private List<Image> lRetosIntermedio;
-        private List<Image> lRetosDificil;
-        private List<Respuesta> lRespuestas;
+        public List<Image> lRetosIntermedio;
+        public List<Image> lRetosDificil;
 
         public Reto()
         {
@@ -26,8 +21,6 @@ namespace Proyecto_Euler
             lRetosIntermedio = new List<Image>();
             lRetosDificil = new List<Image>();
             agregarRetos();
-
-            //tHiloBarra = new Thread(new ThreadStart(barraTiempo));
         }
 
         public void agregarRetos()

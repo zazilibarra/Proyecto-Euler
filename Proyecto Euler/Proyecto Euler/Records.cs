@@ -24,9 +24,9 @@ namespace Proyecto_Euler
 
         private void btRegresar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Menu formMenu = new Menu();
-            formMenu.Visible = true;
+            formMenu.ShowDialog();
         }
 
         private void Records_Load(object sender, EventArgs e)

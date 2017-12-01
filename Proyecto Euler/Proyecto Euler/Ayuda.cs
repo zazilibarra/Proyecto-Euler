@@ -19,9 +19,9 @@ namespace Proyecto_Euler
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Menu formMenu = new Menu();
-            formMenu.Visible = true;
+            formMenu.ShowDialog();
         }
 
         private void Ayuda_FormClosing(object sender, FormClosingEventArgs e)

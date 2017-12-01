@@ -23,6 +23,10 @@ namespace Proyecto_Euler
         int r, r2;
         string res;
         int ans, aux, aux2;
+        
+
+        Thread tHilo;
+        delegate void delegado(int iValor);
 
         public Form_RetoSeleccionar()
         {
@@ -37,7 +41,11 @@ namespace Proyecto_Euler
         {
             pb2.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
             this.Controls.Add(pb2);
+        }
 
+        public void ejecutar(string j)
+        {
+            lblUsuario.Text = j;
         }
 
         private void bt1_Click(object sender, EventArgs e)
@@ -155,6 +163,32 @@ namespace Proyecto_Euler
         private void Form_RetoSeleccionar_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_RetoSeleccionar_Activated(object sender, EventArgs e)
+        {
+            tHilo = new Thread(new ThreadStart(Progreso));
+            tHilo.Start();
+        }
+
+        public void Progreso()
+        {
+            for (int i = 0; i < 101; i++)
+            {
+                delegado MD = new delegado(Actualizar1);
+                this.Invoke(MD, new object[] { i });
+                Thread.Sleep(70);
+            }
+        }
+
+        public void Actualizar1(int v)
+        {
+            progressBar1.Value = v;
         }
                    
     }

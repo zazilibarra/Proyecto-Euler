@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using System.IO;
 using System.Web.Script.Serialization;
 
+
 namespace Proyecto_Euler
 {
     public partial class Login : Form
     {
         //Delegado
-        public delegate void mostrar(string n, string p);
+        public delegate void mostrar(string j);
 
         //Evento hará lo que corresponde al delegado
         public event mostrar eMostrar;
@@ -25,7 +26,6 @@ namespace Proyecto_Euler
         {
             InitializeComponent();
 
-            //d = new DatosUsuario();
             d = new Form_RetoCheck();
             eMostrar = d.ejecutar;
         }
@@ -34,7 +34,8 @@ namespace Proyecto_Euler
         {
             //RWArchivoTexto();
 
-            eMostrar(tbUsuario.Text, tbContraseña.Text);
+            Jugador jugador = new Jugador(tbUsuario.Text, tbContraseña.Text);
+            eMostrar(jugador.Nombre);
             d.ShowDialog();
         }
 
@@ -85,7 +86,7 @@ namespace Proyecto_Euler
             string fileName = "Usuarios.json";
 
             pathString = System.IO.Path.Combine(pathString, fileName);
-            MessageBox.Show("Ruta: " + pathString);
+            //MessageBox.Show("Ruta: " + pathString);
 
             if (!System.IO.File.Exists(pathString))
             {
@@ -99,7 +100,7 @@ namespace Proyecto_Euler
             }
             else
             {
-                MessageBox.Show("File" + fileName+ " already exists.");
+                //MessageBox.Show("File" + fileName+ " already exists.");
                 return;
             }
 

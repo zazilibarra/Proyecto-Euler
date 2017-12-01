@@ -106,7 +106,6 @@
     <Compile Include="Records.Designer.cs">
       <DependentUpon>Records.cs</DependentUpon>
     </Compile>
-    <Compile Include="Respuesta.cs" />
     <Compile Include="Reto.cs" />
     <Compile Include="RetoCompletar.cs" />
     <Compile Include="RetoSeleccionar.cs" />

@@ -19,10 +19,17 @@ namespace Proyecto_Euler
         int sigR;
         int r;
         int res, ans, aux;
+        int cantRetos;
 
-        //Thread tHiloBarra;
+        //Delegado
+        public delegate void mostrar(string j);
 
-        //delegate void delegado(int iValor);
+        //Evento hará lo que corresponde al delegado
+        public event mostrar eMostrar;
+        Form_RetoSeleccionar sigNivel;
+
+        Thread tHilo;
+        delegate void delegado(int iValor);
 
         public Form_RetoCheck()
         {
@@ -30,8 +37,10 @@ namespace Proyecto_Euler
             reto = new RetoUnica();
             rand = new Random();
             sigR = 1;
+            cantRetos = 1;
 
-            //tHiloBarra = new Thread(new ThreadStart(barraTiempo));
+            sigNivel = new Form_RetoSeleccionar();
+            eMostrar = sigNivel.ejecutar;
         }
 
         private void Form_RetoCheck_Load(object sender, EventArgs e)
@@ -45,9 +54,9 @@ namespace Proyecto_Euler
 
         }
 
-        public void ejecutar(string u, string p)
+        public void ejecutar(string j)
         {
-            lblUsuario.Text = u;
+            lblUsuario.Text = j;
         }
 
         private void btSiguiente_Click(object sender, EventArgs e)
@@ -59,6 +68,7 @@ namespace Proyecto_Euler
                 res = reto.lRespuesta[sigR];
                 lienzo.DrawImage(reto.lRetosFacil[sigR], 0, 0, 569, 507);
                 sigR++;
+                cantRetos++;
             }
             else
             {
@@ -70,6 +80,12 @@ namespace Proyecto_Euler
                 
             }
             clear();
+            if(cantRetos == 3)
+            {
+                this.Hide();
+                eMostrar(lblUsuario.Text);
+                sigNivel.ShowDialog();
+            }
         }
 
         public void clear()
@@ -104,6 +120,27 @@ namespace Proyecto_Euler
         private void Form_RetoCheck_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Form_RetoCheck_Activated(object sender, EventArgs e)
+        {
+            tHilo = new Thread(new ThreadStart(Progreso));
+            tHilo.Start();
+        }
+
+        public void Progreso()
+        {
+            for (int i = 0; i < 101; i++)
+            {
+                delegado MD = new delegado(Actualizar1);
+                this.Invoke(MD, new object[] { i });
+                Thread.Sleep(70);
+            }
+        }
+
+        public void Actualizar1(int v)
+        {
+            pBTimeFacil.Value = v;
         }
     }
 }

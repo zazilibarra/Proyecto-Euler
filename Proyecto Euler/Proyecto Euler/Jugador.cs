@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+
 
 namespace Proyecto_Euler
 {
     class Jugador
     {
-        private int iID;
-        private int iIDReto;
-        private string sNombre;
-        private string sContraseña;
+        public static int iID = 0;
+        public int iIDReto;
+        public string sNombre { get; set; }
+        public string sContraseña { get; set; }
 
         public Jugador(string n, string p)
         {
             sNombre = n;
             sContraseña = p;
-            iID = 1;
+            iID++;
             iIDReto = 1;
         }
 

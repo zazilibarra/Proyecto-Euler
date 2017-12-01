@@ -19,10 +19,10 @@ namespace Proyecto_Euler
             InitializeComponent();
         }
 
-        public void ejecutar(string u, string p)
+        public void ejecutar(string j)
         {
-            lblUsuario.Text = u;
-            lblContraseña.Text = p;
+            lblUsuario.Text = j;
+            //lblContraseña.Text = j.Contraseña.ToString();
         }
 
         private void DatosUsuario_Load(object sender, EventArgs e)

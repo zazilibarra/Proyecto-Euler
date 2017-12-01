@@ -24,21 +24,21 @@ namespace Proyecto_Euler
 
         private void btAyuda_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Ayuda formAyuda = new Ayuda();
             formAyuda.ShowDialog();
         }
 
         private void btIniciar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Login formLogin = new Login();
             formLogin.ShowDialog();
         }
 
         private void btRecords_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             Records formRecords = new Records();
             formRecords.ShowDialog();
         }
@@ -46,6 +46,13 @@ namespace Proyecto_Euler
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btContinuar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login formLogin = new Login();
+            formLogin.ShowDialog();
         }
     }
 }
