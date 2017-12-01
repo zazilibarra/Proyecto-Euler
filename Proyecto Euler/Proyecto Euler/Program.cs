@@ -16,7 +16,7 @@ namespace Proyecto_Euler
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Portada());
+            Application.Run(new Form_RetoCompletar());
         }
     }
 }
