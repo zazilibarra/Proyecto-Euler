@@ -22,11 +22,18 @@ namespace Proyecto_Euler
         Point p3 = new Point(696, 150);
         int r, r2;
         string res;
-        int ans, aux, aux2;
+        int ans, aux, aux2, cantRetos;
         
 
         Thread tHilo;
         delegate void delegado(int iValor);
+
+        //Delegado
+        public delegate void mostrar(string j);
+
+        //Evento hará lo que corresponde al delegado
+        public event mostrar eMostrar;
+        Form_RetoCompletar sigNivel;
 
         public Form_RetoSeleccionar()
         {
@@ -35,6 +42,10 @@ namespace Proyecto_Euler
             rand = new Random();
             aux = 1;
             aux2 = 1;
+            cantRetos = 1;
+
+            sigNivel = new Form_RetoCompletar();
+            eMostrar = sigNivel.ejecutar;
         }
 
         private void Form_RetoSeleccionar_Load(object sender, EventArgs e)
@@ -68,6 +79,7 @@ namespace Proyecto_Euler
                 aux2++;
                 aux++;
                 ans = 0;
+                cantRetos++;
                 limpiar();
             }
             else
@@ -78,6 +90,13 @@ namespace Proyecto_Euler
                     limpiar();
                 }
                 
+            }
+            if (cantRetos == 4)
+            {
+                this.Hide();
+                eMostrar(lblUsuario.Text);
+                sigNivel.ShowDialog();
+                pbTimeMedio.Value = 0;
             }
         }
 
@@ -188,7 +207,7 @@ namespace Proyecto_Euler
 
         public void Actualizar1(int v)
         {
-            progressBar1.Value = v;
+            pbTimeMedio.Value = v;
         }
                    
     }

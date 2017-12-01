@@ -36,7 +36,7 @@
             this.btSiguiente = new System.Windows.Forms.Button();
             this.btRegresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.pbTimeMedio = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -121,14 +121,14 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Elige la respuesta correcta";
             // 
-            // progressBar1
+            // pbTimeMedio
             // 
-            this.progressBar1.Location = new System.Drawing.Point(787, 55);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(4);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(387, 28);
-            this.progressBar1.TabIndex = 7;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            this.pbTimeMedio.Location = new System.Drawing.Point(787, 55);
+            this.pbTimeMedio.Margin = new System.Windows.Forms.Padding(4);
+            this.pbTimeMedio.Name = "pbTimeMedio";
+            this.pbTimeMedio.Size = new System.Drawing.Size(387, 28);
+            this.pbTimeMedio.TabIndex = 7;
+            this.pbTimeMedio.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // label2
             // 
@@ -160,7 +160,7 @@
             this.ClientSize = new System.Drawing.Size(1181, 654);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.pbTimeMedio);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btRegresar);
             this.Controls.Add(this.btSiguiente);
@@ -192,7 +192,7 @@
         private System.Windows.Forms.Button btSiguiente;
         private System.Windows.Forms.Button btRegresar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar pbTimeMedio;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblUsuario;
     }

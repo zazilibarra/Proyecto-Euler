@@ -78,6 +78,7 @@
             this.btRecords.TabIndex = 3;
             this.btRecords.Text = "Records";
             this.btRecords.UseVisualStyleBackColor = true;
+            this.btRecords.Visible = false;
             this.btRecords.Click += new System.EventHandler(this.btRecords_Click);
             // 
             // btSalir

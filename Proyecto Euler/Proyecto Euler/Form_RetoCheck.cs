@@ -80,11 +80,12 @@ namespace Proyecto_Euler
                 
             }
             clear();
-            if(cantRetos == 3)
+            if(cantRetos == 4)
             {
                 this.Hide();
                 eMostrar(lblUsuario.Text);
                 sigNivel.ShowDialog();
+                pBTimeFacil.Value = 0;
             }
         }
 
@@ -136,11 +137,16 @@ namespace Proyecto_Euler
                 this.Invoke(MD, new object[] { i });
                 Thread.Sleep(70);
             }
+            MessageBox.Show("Se termino el tiempo");
         }
 
         public void Actualizar1(int v)
         {
             pBTimeFacil.Value = v;
+            if(v == 100)
+            {
+                pBTimeFacil.Value = 0;
+            }
         }
     }
 }
