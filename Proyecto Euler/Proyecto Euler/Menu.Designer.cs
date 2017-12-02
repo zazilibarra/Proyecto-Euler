@@ -43,7 +43,7 @@
             this.btIniciar.Name = "btIniciar";
             this.btIniciar.Size = new System.Drawing.Size(232, 49);
             this.btIniciar.TabIndex = 0;
-            this.btIniciar.Text = "Iniciar";
+            this.btIniciar.Text = "Registrarse";
             this.btIniciar.UseVisualStyleBackColor = true;
             this.btIniciar.Click += new System.EventHandler(this.btIniciar_Click);
             // 

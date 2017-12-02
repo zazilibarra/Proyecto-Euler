@@ -126,6 +126,7 @@
             this.btRegresar.TabIndex = 6;
             this.btRegresar.Text = "Regresar a Menu";
             this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
             // 
             // pBTimeFacil
             // 

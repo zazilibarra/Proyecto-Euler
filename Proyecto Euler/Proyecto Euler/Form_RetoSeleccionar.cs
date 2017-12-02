@@ -23,13 +23,14 @@ namespace Proyecto_Euler
         int r, r2;
         string res;
         int ans, aux, aux2, cantRetos;
-        
+
+        Jugador currentJugador;
 
         Thread tHilo;
         delegate void delegado(int iValor);
 
         //Delegado
-        public delegate void mostrar(string j);
+        public delegate void mostrar(Jugador j);
 
         //Evento hará lo que corresponde al delegado
         public event mostrar eMostrar;
@@ -54,9 +55,10 @@ namespace Proyecto_Euler
             this.Controls.Add(pb2);
         }
 
-        public void ejecutar(string j)
+        public void ejecutar(Jugador j)
         {
-            lblUsuario.Text = j;
+            lblUsuario.Text = j.sNombre;
+            currentJugador = j;
         }
 
         private void bt1_Click(object sender, EventArgs e)
@@ -94,7 +96,7 @@ namespace Proyecto_Euler
             if (cantRetos == 4)
             {
                 this.Hide();
-                eMostrar(lblUsuario.Text);
+                eMostrar(currentJugador);
                 sigNivel.ShowDialog();
                 pbTimeMedio.Value = 0;
             }

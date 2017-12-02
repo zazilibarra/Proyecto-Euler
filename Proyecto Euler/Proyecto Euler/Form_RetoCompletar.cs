@@ -63,9 +63,9 @@ namespace Proyecto_Euler
             this.Controls.Add(pb2);
         }
 
-        public void ejecutar(string j)
+        public void ejecutar(Jugador j)
         {
-            lblUsuario.Text = j;
+            lblUsuario.Text = j.sNombre;
         }
 
         //Evento para cargar el primer Reto en el picturebox
@@ -160,5 +160,6 @@ namespace Proyecto_Euler
         {
             pbTimeDificil.Value = v;
         }
+
     }
 }

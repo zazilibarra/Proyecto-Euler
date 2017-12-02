@@ -19,9 +19,9 @@ namespace Proyecto_Euler
             InitializeComponent();
         }
 
-        public void ejecutar(string j)
+        public void ejecutar(Jugador j)
         {
-            lblUsuario.Text = j;
+            lblUsuario.Text = j.sNombre;
             //lblContraseña.Text = j.Contraseña.ToString();
         }
 

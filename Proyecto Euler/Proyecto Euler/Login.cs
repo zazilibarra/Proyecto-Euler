@@ -15,107 +15,134 @@ namespace Proyecto_Euler
 {
     public partial class Login : Form
     {
-        //Delegado
-        public delegate void mostrar(string j);
+        //Delegado para mostrar nombre de Usurio en los retos
+        public delegate void mostrar(Jugador j);
 
         //Evento hará lo que corresponde al delegado
         public event mostrar eMostrar;
+
+        //Pantalla siguiente de entrar
         Form_RetoCheck d;
+
+        //Arreglo de Jugadores para leer JSON
+        Jugador[] jugadores = new Jugador[100];
+
+        //item para saber ultima posicion usada
+        int jugRegistrados;
 
         public Login()
         {
             InitializeComponent();
 
+            //Se crea siguiente pantalla
             d = new Form_RetoCheck();
+
+            //Asocia el evento con una funcion de la siguiente pantalla
             eMostrar = d.ejecutar;
         }
 
-        private void btIniciarSesion_Click(object sender, EventArgs e)
+        //Escribir en archivo de usuarios
+        public void WriteUsers(Jugador newJugador)
         {
-            //RWArchivoTexto();
-
-            Jugador jugador = new Jugador(tbUsuario.Text, tbContraseña.Text);
-            eMostrar(jugador.Nombre);
-            d.ShowDialog();
-        }
-
-        #region JSON
-        public void WriteUsers()
-        {
-            JavaScriptSerializer ser = new JavaScriptSerializer();
-            Jugador p1 = new Jugador();
-            string outputJSON = ser.Serialize(p1);
+            JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
+            jugadores[jugRegistrados] = newJugador;
+            string outputJSON = jsSerializer.Serialize(jugadores);
             File.WriteAllText(@"Files\Usuarios.json", outputJSON);
+            eMostrar(jugadores[jugRegistrados]);
         }
 
-        //public void WriteUsers(Jugador jUser)
-        //{
-        //    JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
-        //    string outputJSON = jsSerializer.Serialize(jUser);
-        //    File.WriteAllText(@"Files\Usuarios.json", outputJSON);
-        //}
-
+        //Leer archivo de usuarios registrados
         public void ReadUsers()
         {
-            JavaScriptSerializer ser = new JavaScriptSerializer();
+            JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
             string outputJSON = File.ReadAllText(@"Files\Usuarios.json");
-            Jugador [] p1 = ser.Deserialize<Jugador[]>(outputJSON);
-            MessageBox.Show(p1.ToString());
-        }
-        #endregion
+            Jugador[] strJugadores = jsSerializer.Deserialize<Jugador[]>(outputJSON);
 
-        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+            getUsuariosRegistrados(strJugadores);
+
+            MessageBox.Show(jugRegistrados.ToString());
+        }
+
+        //Obtener cantidad y arreglo de usuarios que ya estan en el archivo JSON
+        public void getUsuariosRegistrados(Jugador[] strJugadores)
         {
-            this.Close();
-            Menu formMenu = new Menu();
-            formMenu.Visible = true;
+            jugRegistrados = 0;
+            int i = 0;
+
+            if (strJugadores != null)
+            {
+                foreach (Jugador item in strJugadores)
+                {
+                    if (item != null)
+                    {
+                        jugadores[i] = item;
+                        jugRegistrados++;
+                    }
+                    i++;
+                }
+            }
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        //Valida si no existe un usuario ya registrado
+        public bool validaNewUser(Jugador[] strJugadores)
         {
-            CreateFileOrFolder();            
+            if (jugRegistrados != 0)
+            {
+                foreach (Jugador item in strJugadores)
+                {
+                    if (item != null && item.sNombre == tbUsuario.Text)
+                    {
+                        MessageBox.Show("Intente de nuevo, ese Usuario ya existe");
+                        tbUsuario.Text = "";
+                        tbContraseña.Text = "";
+                        return false;
+                    }
+                }
+            }
+            return true;
         }
 
+        //Metodo para validar si existe la carpeta y archivo donde se guardan los usuarios
         public void CreateFileOrFolder()
         {
             string folderName = @"Files";
-            string pathString = System.IO.Path.Combine(folderName, "SubFolder");
 
-            System.IO.Directory.CreateDirectory(pathString);
+            System.IO.Directory.CreateDirectory(folderName);
 
             string fileName = "Usuarios.json";
 
-            pathString = System.IO.Path.Combine(pathString, fileName);
+            string pathString = System.IO.Path.Combine(folderName, fileName);
             //MessageBox.Show("Ruta: " + pathString);
 
             if (!System.IO.File.Exists(pathString))
             {
-                using (System.IO.FileStream fs = System.IO.File.Create(pathString))
+                //Crea el archivo si no existe
+                FileStream fs = File.Create(pathString);
+            }
+            else
+            {
+                //Si existe el documento lo lee
+                ReadUsers();
+                return;
+            }
+        }
+
+        #region Events
+        private void btIniciarSesion_Click(object sender, EventArgs e)
+        {
+            //RWArchivoTexto();
+
+            if (!string.IsNullOrEmpty(tbUsuario.Text) && !string.IsNullOrEmpty(tbContraseña.Text))
+            {
+                if (validaNewUser(jugadores))
                 {
-                    for (byte i = 0; i < 10; i++)
-                    {
-                        fs.WriteByte(i);
-                    }
+                    WriteUsers(new Jugador(tbUsuario.Text, tbContraseña.Text));
+                    d.ShowDialog();
                 }
             }
             else
             {
-                //MessageBox.Show("File" + fileName+ " already exists.");
-                return;
-            }
-
-            // Read and display the data from your file.
-            try
-            {
-                byte[] readBuffer = System.IO.File.ReadAllBytes(pathString);
-                foreach (byte b in readBuffer)
-                {
-                    MessageBox.Show(b + " ");
-                }
-            }
-            catch (System.IO.IOException e)
-            {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Debe completar la informacion");
             }
         }
 
@@ -123,6 +150,12 @@ namespace Proyecto_Euler
         {
             Application.Exit();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            CreateFileOrFolder();
+        }
+        #endregion
 
         #region ARCHIVOS DE TEXTO
         //public void RWArchivoTexto()

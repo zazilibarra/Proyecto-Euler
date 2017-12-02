@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace Proyecto_Euler
 {
-    class Jugador
+    public class Jugador
     {
-        public static int iID = 0;
-        public int iIDReto;
-        public string sNombre { get; set; }
-        public string sContraseña { get; set; }
+        private static int iID = 0;
+        private int iIDReto;
+        public string sNombre { get; set; } //Publico para poder acceder a él con delegado
+        private string sContraseña;
 
         public Jugador(string n, string p)
         {
@@ -23,24 +23,16 @@ namespace Proyecto_Euler
             iIDReto = 1;
         }
 
+        //Constructor vacio para manejar con JSON
         public Jugador()
         {
-            
-        }
-
-        public void contestar()
-        {
 
         }
 
-        public void registrarAvance()
-        {
-
-        }
-
+        //Sobrecarga de metodo 'ToString' para Jugador
         public override string ToString()
         {
-            return "iDUsuario: " + iID + "\nNombre: " + sNombre + "\nContraseña: " + sContraseña +"\nReto: " +iIDReto;
+            return "iDUsuario: " + iID + "\nNombre: " + sNombre + "\nContraseña: " + sContraseña + "\nReto: " + iIDReto;
         }
 
         #region METODOS DE ACCESO
@@ -65,18 +57,6 @@ namespace Proyecto_Euler
             set
             {
                 iIDReto = value;
-            }
-        }
-
-        public string Nombre
-        {
-            get
-            {
-                return sNombre;
-            }
-            set
-            {
-                sNombre = value;
             }
         }
 
