@@ -6,7 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
+using System.IO;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 namespace Proyecto_Euler
@@ -25,6 +26,9 @@ namespace Proyecto_Euler
         int ans, aux, aux2, cantRetos;
 
         Jugador currentJugador;
+
+        //Arreglo de Jugadores para leer JSON
+        Jugador[] jugadores = new Jugador[100];
 
         Thread tHilo;
         delegate void delegado(int iValor);
@@ -183,6 +187,7 @@ namespace Proyecto_Euler
 
         private void Form_RetoSeleccionar_FormClosing(object sender, FormClosingEventArgs e)
         {
+            tHilo.Abort();
             Application.Exit();
         }
 
@@ -203,13 +208,70 @@ namespace Proyecto_Euler
             {
                 delegado MD = new delegado(Actualizar1);
                 this.Invoke(MD, new object[] { i });
-                Thread.Sleep(70);
+                Thread.Sleep(180);
             }
         }
 
         public void Actualizar1(int v)
         {
             pbTimeMedio.Value = v;
+        }
+
+        private void btRegresar_Click(object sender, EventArgs e)
+        {
+            ReadUsers();
+            guardaProgreso(jugadores);
+            WriteUsers();
+            tHilo.Abort();
+            this.Hide();
+            Menu formMenu = new Menu();
+            formMenu.ShowDialog();
+        }
+
+        public void ReadUsers()
+        {
+            JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
+            string outputJSON = File.ReadAllText(@"Files\Usuarios.json");
+            Jugador[] strJugadores = jsSerializer.Deserialize<Jugador[]>(outputJSON);
+
+            getUsuariosRegistrados(strJugadores);
+        }
+
+        //Obtener cantidad y arreglo de usuarios que ya estan en el archivo JSON
+        public void getUsuariosRegistrados(Jugador[] strJugadores)
+        {
+            int i = 0;
+
+            if (strJugadores != null)
+            {
+                foreach (Jugador item in strJugadores)
+                {
+                    if (item != null)
+                    {
+                        jugadores[i] = item;
+                    }
+                    i++;
+                }
+            }
+        }
+
+        public void guardaProgreso(Jugador[] strJugadores)
+        {
+            for (int i = 0; i < strJugadores.Length; i++)
+            {
+                if (strJugadores[i] != null && strJugadores[i].sNombre == currentJugador.sNombre)
+                {
+                    strJugadores[i].Reto = 2;
+                }
+            }
+        }
+
+        //Escribir en archivo de usuarios
+        public void WriteUsers()
+        {
+            JavaScriptSerializer jsSerializer = new JavaScriptSerializer();
+            string outputJSON = jsSerializer.Serialize(jugadores);
+            File.WriteAllText(@"Files\Usuarios.json", outputJSON);
         }
                    
     }

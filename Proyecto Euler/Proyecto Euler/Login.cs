@@ -60,7 +60,7 @@ namespace Proyecto_Euler
 
             getUsuariosRegistrados(strJugadores);
 
-            MessageBox.Show(jugRegistrados.ToString());
+            //MessageBox.Show(jugRegistrados.ToString());
         }
 
         //Obtener cantidad y arreglo de usuarios que ya estan en el archivo JSON
@@ -137,12 +137,13 @@ namespace Proyecto_Euler
                 if (validaNewUser(jugadores))
                 {
                     WriteUsers(new Jugador(tbUsuario.Text, tbContraseña.Text));
+                    this.Hide();                    
                     d.ShowDialog();
                 }
             }
             else
             {
-                MessageBox.Show("Debe completar la informacion");
+                MessageBox.Show("Debe completar la información");
             }
         }
 

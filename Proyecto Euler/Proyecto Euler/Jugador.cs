@@ -20,7 +20,7 @@ namespace Proyecto_Euler
             sNombre = n;
             sContraseña = p;
             iID++;
-            iIDReto = 1;
+            iIDReto = 0;
         }
 
         //Constructor vacio para manejar con JSON

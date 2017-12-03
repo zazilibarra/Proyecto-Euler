@@ -45,3 +45,4 @@ C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proye
 C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto Euler.csproj.GenerateResource.Cache
 C:\Users\Karla Rosas\Documents\K2\UASLP\5TO SEMESTRE\VISUAL\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form_RetoCheck.resources
 C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Form_RetoCheck.resources
+C:\Users\Mildred Sifuentes\Documents\Proyecto Euler\Proyecto-Euler\Proyecto Euler\Proyecto Euler\obj\Debug\Proyecto_Euler.Continuar.resources

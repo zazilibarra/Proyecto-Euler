@@ -49,7 +49,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(16, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(759, 624);
             this.pictureBox1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(845, 220);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             this.textBox2.Enabled = false;
             this.textBox2.Location = new System.Drawing.Point(845, 272);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             this.textBox3.Enabled = false;
             this.textBox3.Location = new System.Drawing.Point(845, 315);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
             this.textBox3.ShortcutsEnabled = false;
             this.textBox3.Size = new System.Drawing.Size(132, 22);
@@ -90,7 +90,7 @@
             // 
             this.btSiguiente.Enabled = false;
             this.btSiguiente.Location = new System.Drawing.Point(800, 417);
-            this.btSiguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSiguiente.Margin = new System.Windows.Forms.Padding(4);
             this.btSiguiente.Name = "btSiguiente";
             this.btSiguiente.Size = new System.Drawing.Size(365, 92);
             this.btSiguiente.TabIndex = 4;
@@ -101,12 +101,13 @@
             // btRegresar
             // 
             this.btRegresar.Location = new System.Drawing.Point(800, 534);
-            this.btRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btRegresar.Name = "btRegresar";
             this.btRegresar.Size = new System.Drawing.Size(365, 86);
             this.btRegresar.TabIndex = 5;
             this.btRegresar.Text = "Regresar";
             this.btRegresar.UseVisualStyleBackColor = true;
+            this.btRegresar.Click += new System.EventHandler(this.btRegresar_Click);
             // 
             // label1
             // 

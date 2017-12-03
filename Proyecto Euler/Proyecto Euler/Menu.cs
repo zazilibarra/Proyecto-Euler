@@ -51,7 +51,7 @@ namespace Proyecto_Euler
         private void btContinuar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login formLogin = new Login();
+            Continuar formLogin = new Continuar();
             formLogin.ShowDialog();
         }
     }
